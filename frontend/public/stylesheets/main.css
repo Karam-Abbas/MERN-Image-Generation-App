@@ -3,8 +3,7 @@
 
 @theme {
     --primary: hsl(0,0%,0%);
-    --secondary: hsl(0,0%,50%);
-    --tertiary: hsl(219, 48%, 25%);
+    --secondary: hsl(0,0%,40%);
     --f1:0.25rem;
     --f2:0.5rem;
     --f3:1rem;
@@ -13,11 +12,9 @@
     --f6:3rem;
 }
 *{
-    margin: 0;
-    padding: 0;
     font-family: "Lato", sans-serif;
 }
 
 body{
-    background-color: var(--tertiary);
+    background-color: var(--secondary);
 }

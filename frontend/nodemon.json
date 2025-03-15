@@ -1,5 +1,0 @@
-{
-    "watch": ["src", "vite.config.js"],
-    "ext": "js,ts,jsx,tsx",
-    "exec": "vite"
-}
