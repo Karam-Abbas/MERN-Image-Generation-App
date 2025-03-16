@@ -1,20 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import "tailwindcss";
 
-@theme {
-    --primary: hsl(0,0%,0%);
-    --secondary: hsl(0,0%,40%);
-    --f1:0.25rem;
-    --f2:0.5rem;
-    --f3:1rem;
-    --f4:1.5rem;
-    --f5:2rem;
-    --f6:3rem;
-}
-*{
-    font-family: "Lato", sans-serif;
-}
-
-body{
-    background-color: var(--secondary);
+:root{
+    --primary: rgb(255, 255, 255);
+    --secondary: rgb(126, 126, 126);
 }
