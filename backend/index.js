@@ -1,7 +1,6 @@
 import "dotenv/config";
 import express from "express";
 import debug from "debug";
-import fs from 'fs/promises'
 import "./config/dbConfig.js";
 import ImageGenerator from "./config/aiConfig.js";
 const dbgr = debug("development:App.js");
@@ -21,9 +20,10 @@ app.post("/", async (req, res) => {
       if (!prompt) {
         return res.status(400).json({ error: "Prompt is required" });
       }
-  
-      const imageUrl = await ImageGenerator(prompt);
-      res.json(imageUrl);
+      let imageUrl = await ImageGenerator(prompt);
+      console.log("Generated Image URL:", imageUrl);
+      res.send(imageUrl.data[0].url);
+
     } catch (error) {
       console.error("Error generating image:", error);
       res.status(500).json({

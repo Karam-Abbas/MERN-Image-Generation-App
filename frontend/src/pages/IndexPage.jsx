@@ -8,8 +8,8 @@ const IndexPage = () => {
       const response = await axios.post("http://localhost:5001/", {
         prompt,
       });
-      console.log("Image URL:", response.data);
-      setImageSrc(response.data);
+      console.log("Image URL:", response);
+      setImageSrc(response);
     } catch (error) {
       console.error(error);
     }
