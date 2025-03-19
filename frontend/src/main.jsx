@@ -9,7 +9,7 @@ createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<IndexPage />} ></Route>
+        <Route index element={<IndexPage />}></Route>
         <Route path="/generate" element={<GeneratePage />} />
       </Route>
     </Routes>

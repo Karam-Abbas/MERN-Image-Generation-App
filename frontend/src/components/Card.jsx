@@ -12,9 +12,9 @@ const Card = (props) => {
         alt="Generated Image"
         height={size}
         width={size}
-        className="object-fill"
+        className="object-fill rounded-lg"
       />
-      <div className="absolute inset-0 flex items-center justify-center bg-black/50 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity">
+      <div className="absolute inset-0 flex items-center justify-center bg-black/50 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
         <span className="text-white text-lg overflow-hidden">{prompt}</span>
       </div>
     </div>

@@ -21,7 +21,6 @@ const ImageGenerator = async (input) => {
     },
     prompt: input,
   });
-  console.log(res);
   return res;
 };
 
