@@ -28,7 +28,6 @@ app.get("/", async (req, res) => {
 })
 
 app.post("/", async (req, res) => {
-  console.log('Collection name:', imageModel.collection.name);
     try {
       const { prompt } = req.body;
       

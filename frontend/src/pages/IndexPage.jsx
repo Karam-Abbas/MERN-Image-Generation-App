@@ -9,7 +9,6 @@ const IndexPage = () => {
     const fetchImages = async () => {
       try {
         const response = await axios.get("http://localhost:5001/");
-        console.log('res:',response);
         setImages(response.data);
       } catch (error) { 
         console.error("Error fetching images:", error);

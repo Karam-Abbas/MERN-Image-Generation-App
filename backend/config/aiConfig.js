@@ -2,8 +2,6 @@ import openai from "openai";
 
 const ImageGenerator = async (input) => {
   input = JSON.stringify(input);
-  console.log("Input:", input);
-
   const client = new openai({
     baseURL: "https://api.studio.nebius.com/v1/",
     apiKey: process.env.NEBIUS_API_KEY,
